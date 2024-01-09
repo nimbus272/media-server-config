@@ -1,0 +1,7 @@
+docker compose -f docker-compose.yml --profile vpn up -d
+
+docker compose -f docker-compose.yml --profile vpn down
+
+docker compose -f docker-compose-nginx.yml up -d
+
+docker compose -f docker-compose-nginx.yml down
